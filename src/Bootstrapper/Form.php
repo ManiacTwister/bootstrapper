@@ -643,7 +643,7 @@ class Form extends Facade
      */
     public static function prepend($control, $value)
     {
-        return '<div class="input-prepend"><span class="add-on">'.$value.'</span>'.$control.'</div>';
+        return '<div class="input-group"><span class="input-group-addon">'.$value.'</span>'.$control.'</div>';
     }
 
     /**
@@ -656,7 +656,7 @@ class Form extends Facade
      */
     public static function append($control, $value)
     {
-        return '<div class="input-append">'.$control.'<span class="add-on">'.$value.'</span></div>';
+        return '<div class="input-group">'.$control.'<span class="input-group-addon">'.$value.'</span></div>';
     }
 
     /**
@@ -670,7 +670,7 @@ class Form extends Facade
      */
     public static function prepend_append($control, $pre_value, $post_value)
     {
-        return '<div class="input-prepend input-append"><span class="add-on">'.$pre_value.'</span>'.$control.'<span class="add-on">'.$post_value.'</span></div>';
+        return '<div class="input-group input-append"><span class="input-group-addon">'.$pre_value.'</span>'.$control.'<span class="input-group-addon">'.$post_value.'</span></div>';
     }
 
     /**
