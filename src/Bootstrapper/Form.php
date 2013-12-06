@@ -638,12 +638,13 @@ class Form extends Facade
      *
      * @param string $control control that should have a prepended value
      * @param string $value   value to prepend to control
+     * @param  string $class class for icons 
      *
      * @return string
      */
-    public static function prepend($control, $value)
+    public static function prepend($control, $value, $class=NULL)
     {
-        return '<div class="input-group"><span class="input-group-addon">'.$value.'</span>'.$control.'</div>';
+        return '<div class="input-group"><span class="input-group-addon '.$class.'">'.$value.'</span>'.$control.'</div>';
     }
 
     /**
