@@ -652,12 +652,13 @@ class Form extends Facade
      *
      * @param string $control control that should have an appended value
      * @param string $value   value to append to control
+     * @param  string $class class for icons 
      *
      * @return string
      */
-    public static function append($control, $value)
+    public static function append($control, $value, $class=NULL)
     {
-        return '<div class="input-group">'.$control.'<span class="input-group-addon">'.$value.'</span></div>';
+        return '<div class="input-group">'.$control.'<span class="input-group-addon '.$class.'">'.$value.'</span></div>';
     }
 
     /**
